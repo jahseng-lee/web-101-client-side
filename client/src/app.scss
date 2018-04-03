@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: "Impact";
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+$gray: lighten(gray, 30%);
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+
+  .canvas {
+    display: flex;
+    justify-content: center;
+
+    height: 30%;
+
+    background-color: black;
+    color: white;
+
+    .canvas-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        margin: 0;
+      }
+
+      a {
+        color: white;
+
+        &:hover {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
