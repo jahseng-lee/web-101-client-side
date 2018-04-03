@@ -42,4 +42,20 @@ $gray: lighten(gray, 30%);
       }
     }
   }
+
+  .gallery {
+    height: 70%;
+
+    background-color: $gray;
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      padding: 30px 30px 30px 30px;
+
+      max-height: 500px;
+    }
+  }
 }
