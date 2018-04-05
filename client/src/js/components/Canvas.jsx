@@ -11,7 +11,7 @@ class Canvas extends React.Component {
     return (
       <div className="canvas">
         <div className="canvas-container">
-          <h1>WHO'S A GOOD BOY</h1>
+          <h1>WHO'S A GOOD BOY?</h1>
           <button onClick={this.props.handleClick}>SHOW ME A GOOD BOY!</button>
         </div>
       </div>
