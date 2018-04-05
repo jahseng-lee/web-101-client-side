@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   handleClick() {
-    fetch("http://localhost:3000/good_boys/random")
+    fetch("http://localhost:3001/good_boys/random")
       .then(results => results.json())
       .then(data => {
         let imageName = data.img_url
