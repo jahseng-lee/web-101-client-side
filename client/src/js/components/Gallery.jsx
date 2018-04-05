@@ -7,22 +7,15 @@ class Gallery extends React.Component {
     super(props);
   }
 
-  doggoImage(imageName) {
-    switch(imageName) {
-      case "shocked-doggo.jpg":
-         return require("./../../../assets/images/shocked-doggo.jpg");
-      case "smart-doggo.jpg":
-         return require("./../../../assets/images/smart-doggo.jpg");
-      case "spaced-doggo.jpg":
-         return require("./../../../assets/images/spaced-doggo.jpg");
-      default:
-        "";
+  get doggoImage() {
+    if (this.props.imageName) {
+      return `http://localhost:3001/${this.props.imageName}`
     }
   }
 
   render() {
-    if(this.doggoImage(this.props.imageName)) {
-      let doggo = this.doggoImage(this.props.imageName);
+    if(this.doggoImage) {
+      let doggo = this.doggoImage;
 
       return (
         <div className="gallery">
